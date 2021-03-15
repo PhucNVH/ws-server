@@ -5,9 +5,7 @@
 module.exports = function (controller) {
   // use a function to match a condition in the message
   const randomPick = (options)=>{
-    console.log(options)
     var index = Math.floor(Math.random() * options.length);
-    console.log(options[index])
   return options[index];
   }
   controller.hears(

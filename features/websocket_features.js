@@ -6,7 +6,6 @@ module.exports = function(controller) {
 
     if (controller.adapter.name === 'Web Adapter') {
 
-        console.log('Loading sample web features...');
 
         controller.hears(new RegExp('quick'), 'message', async (bot, message) => {
 
