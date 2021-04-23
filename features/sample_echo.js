@@ -42,7 +42,6 @@ module.exports = function (controller) {
       conversation_id: message.user,
     });
     if (val.data.messages) {
-      console.log("hiiii");
       await bot.reply(message, {
         messages: val.data.messages,
         type: "load_message",
